@@ -24,6 +24,10 @@ export default function Home() {
 	/**
 	 * presaleMint: Mint an NFT during the presale
 	 */
+
+	/*
+		Note the conditional logic to prevent public mine during this period is defined in the contract 
+	*/
 	const presaleMint = async () => {
 		try {
 			// We need a Signer here since this is a 'write' transaction.
@@ -50,6 +54,10 @@ export default function Home() {
 	/**
 	 * publicMint: Mint an NFT after the presale
 	 */
+
+	/*
+		Note the conditional logic to prevent public mine during this period is defined in the contract 
+	*/
 	const publicMint = async () => {
 		try {
 			// We need a Signer here since this is a 'write' transaction.
@@ -303,7 +311,7 @@ export default function Home() {
 			const _presaleStarted = checkIfPresaleStarted();
 
 			if (_presaleStarted) {
-				// Will return a date
+				// Will return a date. Initial check
 				checkIfPresaleEnded();
 			}
 
@@ -364,6 +372,9 @@ export default function Home() {
 		}
 
 		// If presale started, but hasn't ended yet, allow for minting during the presale period
+		/*
+			Cool additional feature would be a timer 
+		*/
 		if (presaleStarted && !presaleEnded) {
 			return (
 				<div>
