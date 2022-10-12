@@ -32,4 +32,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## OpenSea NFT url
+
+[OpenSea NFT Link](https://testnets.opensea.io/assets/goerli/0x57A1310454272B6f3eE50ad40Ad8853Bedac3F92/1) for more details.
 # nft-collection-client
